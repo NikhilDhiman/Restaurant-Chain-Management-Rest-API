@@ -90,15 +90,5 @@ Use Swagger UI for API calls.
 - Secure configurations using environment variables or a vault.  
 - Implement API versioning to support future changes.
 
----
 
-### Familiarity with C# & Frameworks
-
-I have experience working with C# .NET Core, MySqlConnector, Entity Framework Core (EF Core), and MySQL, ensuring adherence to best practices in software development. This project is structured with scalability, efficiency, and security in mind.
-
----
-
-### Note
-
-This project was a task to showcase my SQL skills, so I chose to use MySQL direct connection with MySqlConnector instead of an ORM like Entity Framework. Since it primarily involves CRUD operations, writing raw SQL allows me to demonstrate my understanding of query execution, data mapping, and database interactions without the abstraction of an ORM.
 
