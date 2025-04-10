@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "RestaurantShop.Controllers.RestaurantShopController",
+    "Method": "CreateRestaurantShop",
+    "RelativePath": "api/RestaurantShop/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantShop.Common.Model.AddRestaurantShopRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantShop.Controllers.RestaurantShopController",
+    "Method": "ListRestaurantShop",
+    "RelativePath": "api/RestaurantShop/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

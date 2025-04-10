@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Quires>
+	<AddRestaurantShop>
+		<![CDATA[
+		INSERT INTO restaurantshop.restaurantshops (name, opening_time, closing_time, location, rating) values (@name, @opening_time, @closing_time, @location, @rating);
+		]]>
+	</AddRestaurantShop>
+
+	<ListRestaurantShop>
+		<![CDATA[
+		SELECT id, name, opening_time, closing_time, location, rating FROM restaurantshops;
+		]]>
+	</ListRestaurantShop>
+</Quires>

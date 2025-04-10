@@ -1,0 +1,91 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RestaurantShop",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/RestaurantShop/add": {
+      "post": {
+        "tags": [
+          "RestaurantShop"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRestaurantShopRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRestaurantShopRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRestaurantShopRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RestaurantShop/list": {
+      "get": {
+        "tags": [
+          "RestaurantShop"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddRestaurantShopRequest": {
+        "required": [
+          "closing_time",
+          "name",
+          "opening_time"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 2,
+            "type": "string"
+          },
+          "opening_time": {
+            "minLength": 1,
+            "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
+            "type": "string"
+          },
+          "closing_time": {
+            "minLength": 1,
+            "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$",
+            "type": "string"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "rating": {
+            "pattern": "^(?:0(?:\\.\\d{1,2})?|[1-4](?:\\.\\d{1,2})?|5(?:\\.0{1,2})?)$",
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

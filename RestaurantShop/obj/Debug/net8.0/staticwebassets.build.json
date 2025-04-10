@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "B7nzbDFwH0dCwjMrLr2wU4EY5OuprEdHHUmSzaqdJeM=",
+  "Source": "RestaurantShop",
+  "BasePath": "_content/RestaurantShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
